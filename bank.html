@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-bank</title>
+    <link rel="shortcut icon" href="images/Google_V.svg.png" type="image/x-icon">
+    <!-- link css  -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- link tailwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- header section title  -->
+    <header>
+        <h1 class="text-5xl text-center mt-16 text-green-600">My total <span class="text-7xl text-orange-500">balance...!!</span></h1>
+    </header>
+    <!-- header section title close -->
+    <main class="bg-green-100 p-5">
+        <!-- Balance section  -->
+        <section class="mt-10">
+            <div class="grid grid-cols-3 text-center gap-4 mx-auto w-9/12 text-white">
+                <div class="bg-teal-400 p-8 rounded-xl">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-pink-400 p-8 rounded-xl">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h2 class="text-5xl">$00</h2>
+                </div>
+                <div class="bg-violet-400 p-8 rounded-xl">
+                    <h4 class="text-2xl">Total Balance</h4>
+                    <h2 class="text-5xl">$545</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-16 mb-16">
+            <div class="grid grid-cols-2 text-center gap-4 mx-auto w-9/12">
+                <div class="bg-orange-500 p-8 rounded-xl">
+                    <h4 class="text-3xl mb-5 text-white">Please Deposit</h4>
+                    <input class="w-full p-2 rounded-full" type="text" name="" id="deposit-filed" placeholder="$ deposit your amount">
+                <button id="deposit-btn" class="bg-green-500 w-32 h-10 mx-auto text-white rounded-full p-2 mt-5 text-semibold hover:bg-teal-400 ">Deposit</button>
+                </div>
+                <div class="bg-red-400 p-8 rounded-xl">
+                    <h4 class="text-3xl mb-5 text-white"> please Withdraw</h4>
+                    <input class="w-full p-2 rounded-full" type="text" name="" id="deposit-filed" placeholder="$ Withdraw your amount">
+                <button id="withdraw-btn" class="bg-green-500 w-32 h-10 mx-auto text-white rounded-full p-2 mt-5 text-semibold hover:bg-teal-400 ">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- link dom js file  -->
+    <script src="deposit.js"></script>
+</body>
+</html>
